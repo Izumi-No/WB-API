@@ -42,7 +42,7 @@ io.on('connection', socket => {
 
 });
 
-app.get('/', (req,res)=>{res.send("tá funfando zé")})
+app.get('*', (req,res)=>{res.send("tá funfando zé")})
     
 
 
