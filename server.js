@@ -1,6 +1,6 @@
 const express = require('express')
 const process = require('process')
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 80
 const app = express()
 const server = require('http').createServer(app)
 const io = require('socket.io')(server, {
@@ -42,7 +42,7 @@ io.on('connection', socket => {
 
 });
 
-
+app.get('/', (req,res)=>{res.send("tá funfando zé")})
     
 
 
