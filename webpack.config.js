@@ -4,7 +4,7 @@ module.exports = {
   entry: './server.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'server.bundle.js',
+    filename: 'index.js',
   },
   target: 'node',
 };
